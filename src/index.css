@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-display: 'Cinzel', serif;
+    --font-script: 'Great Vibes', cursive;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-serif-cormorant {
+  font-family: var(--font-serif);
+}
+
+.font-cinzel {
+  font-family: var(--font-display);
+}
+
+.font-script-vibes {
+  font-family: var(--font-script);
+}
+
+.font-body {
+  font-family: var(--font-sans);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #14171d;
+}
+::-webkit-scrollbar-thumb {
+  background: #3a3226;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c5a880;
+}
+
+/* Subtle gold shimmer */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.gold-shimmer {
+  background: linear-gradient(90deg, #d4af37 0%, #fff2b2 50%, #d4af37 100%);
+  background-size: 200% 100%;
+  animation: shimmer 4s infinite linear;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-gradient {
+  border-image: linear-gradient(to right, #9a7b4f, #ecd599, #9a7b4f) 1;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Mahligai Cinta - Undangan Pernikahan Digital & RSVP",
+  "description": "Platform undangan pernikahan digital mewah & elegan dengan RSVP interaktif, galeri foto, peta lokasi acara, hitung mundur, buku ucapan, dan manajemen daftar tamu real-time.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
